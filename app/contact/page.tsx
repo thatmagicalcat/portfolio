@@ -32,7 +32,7 @@ export default function ContactPage() {
       <header className="mb-16">
         <h1 className="text-5xl font-black tracking-tighter mb-4 text-white">Contact</h1>
         <p className="text-lg text-muted-foreground">
-          Let's talk about systems, graphics, or your next big idea.
+          Let's talk! I won't bite xD
         </p>
       </header>
 

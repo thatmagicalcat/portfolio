@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "THATMAGICALCAT | Systems & Graphics Engineer",
-  description: "Personal portfolio of thatmagicalcat. Low-level systems, graphics programming, and more.",
+  title: "THATMAGICALCAT",
+  description: "Personal portfolio of thatmagicalcat.",
 };
 
 export default function RootLayout({

@@ -38,9 +38,6 @@ export default function AboutPage() {
         <blockquote className="border-l-4 border-brand pl-6 italic text-foreground/70 my-8 bg-white/5 py-4 pr-4 rounded-r-lg">
           "Simplicity is prerequisite for reliability." — Edsger W. Dijkstra
         </blockquote>
-        <p className="text-foreground/80">
-          I believe in writing code that is clean, minimal, and highly performant. Whether it's a discord wrapper or a Turing-complete type system, the goal is always to build robust software from the ground up.
-        </p>
       </div>
     </div>
   )

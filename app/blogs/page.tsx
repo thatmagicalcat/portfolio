@@ -13,7 +13,7 @@ export default function BlogsPage() {
     <div className="min-h-screen pt-32 pb-16 px-6 max-w-4xl mx-auto">
       <header className="mb-16">
         <h1 className="text-5xl font-black tracking-tighter mb-4 text-white">Writings</h1>
-        <p className="text-lg text-muted-foreground">Thoughts on systems, graphics, and computer science.</p>
+        <p className="text-lg text-muted-foreground">Thoughts on programming languages, systems, graphics, and computer science.</p>
       </header>
 
       <div className="flex flex-col gap-8">

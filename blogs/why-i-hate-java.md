@@ -10,7 +10,9 @@ i can tell you about a few personal issues i have ![](https://cdn.discordapp.com
 
 ![](https://cdn.discordapp.com/emojis/1375125290702868613.webp?size=64) ![](https://cdn.discordapp.com/emojis/813039523796615208.webp?size=64&animated=true)
 
-*breaths in* <br/>*AHHHH*
+*breaths in*
+
+*AHHHH*
 
 Java is probably the only language where i need to perform a blood sacrifice to the oracle gods first if i want to print hello world
 

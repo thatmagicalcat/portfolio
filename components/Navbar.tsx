@@ -17,7 +17,7 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 p-6 mix-blend-difference">
+    <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-background/80 backdrop-blur-md border-b border-white/5">
       <div className="flex justify-between items-center max-w-7xl mx-auto text-white">
         <Link href="/" className="text-xl font-bold tracking-tighter">
           TħΔTΣ∀GiCΛLCΔT

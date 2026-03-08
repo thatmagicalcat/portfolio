@@ -63,7 +63,8 @@
 .prose pre { @apply bg-[#0c0c0c] p-4 rounded-lg overflow-x-auto mb-6 border border-white/5; }
 .prose pre code { @apply bg-transparent p-0 text-inherit text-sm; }
 .prose blockquote { @apply border-l-4 border-brand pl-4 italic text-foreground/70 my-6 bg-white/5 py-3 rounded-r-md; }
-.prose img { @apply rounded-lg my-6 mx-auto max-h-[60vh] object-contain; }
+.prose img { @apply rounded-lg mx-auto max-h-[60vh] object-contain; }
+.prose p img { @apply inline-block m-0 align-middle; }
 .prose hr { @apply border-white/10 my-8; }
 
 /* LaTeX Math Container */

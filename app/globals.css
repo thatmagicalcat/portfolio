@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+  --brand: #E04006;
+  --brand-hover: #ff5216;
+  --card: #0f0f0f;
+  --card-foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    @apply antialiased overflow-x-hidden;
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+}
+
+::selection {
+  background-color: var(--brand);
+  color: white;
+}
+
+/* Prose formatting for markdown content */
+.prose {
+  @apply text-foreground/90 leading-relaxed max-w-[80ch] mx-auto;
+}
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply font-bold mt-10 mb-4 text-white font-sans;
+}
+.prose h1 { @apply text-4xl mb-6 tracking-tight; }
+.prose h2 { @apply text-2xl border-b border-white/10 pb-2; }
+.prose h3 { @apply text-xl; }
+.prose p { @apply mb-6; }
+.prose a { @apply text-brand hover:text-brand-hover underline decoration-brand/30 underline-offset-4 transition-colors; }
+.prose ul { @apply list-disc list-outside ml-6 mb-6 marker:text-brand; }
+.prose ol { @apply list-decimal list-outside ml-6 mb-6 marker:text-brand; }
+.prose li { @apply mb-2 pl-2; }
+.prose code { @apply bg-white/10 px-1.5 py-0.5 rounded text-sm text-brand-hover font-mono; }
+.prose pre { @apply bg-[#0c0c0c] p-4 rounded-lg overflow-x-auto mb-6 border border-white/5; }
+.prose pre code { @apply bg-transparent p-0 text-inherit text-sm; }
+.prose blockquote { @apply border-l-4 border-brand pl-4 italic text-foreground/70 my-6 bg-white/5 py-3 rounded-r-md; }
+.prose img { @apply rounded-lg my-6 mx-auto max-h-[60vh] object-contain; }
+.prose hr { @apply border-white/10 my-8; }
+
+/* LaTeX Math Container */
+.math-inline {
+  @apply text-brand px-1;
+}
+.math-display {
+  @apply overflow-x-auto py-4 text-center my-4 text-brand;
+}
